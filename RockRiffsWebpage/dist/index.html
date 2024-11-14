@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Ian Hartog">
+
+    <title>WEB222 Music App</title>
+
+    <!--
+      Default classless CSS Stylesheet - https://watercss.kognise.dev/
+      Feel free to choose another, or use your own styles.     
+    -->
+    <link rel="stylesheet" href="/index.bfa1d38c.css">
+
+    <link rel="stylesheet" href="/index.77a9bc14.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title">Rock Riffs</h1>
+      <p id="slogan">
+        Embrace the legends of classic rock with Queen, Lynyrd Skynyrd, and Guns N' Roses.
+      </p>
+    </header>
+
+    <nav id="menu"></nav>
+    <a href="/request-artist.html">Request a New Artist</a>
+    <hr>
+
+    <main>
+      <h2 id="selected-artist"></h2>
+      <div class="cards-container"></div>
+
+      <table>
+        <thead>
+          <!-- Statically create the headings for your table here -->
+        </thead>
+        <tbody id="songs">
+          <!-- Dynamically create your product rows here -->
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Add this just above the closing </body> tag in your index.html -->
+    <footer>
+      <div class="newsletter-signup">
+        <h3>10% off when you sign up for our newsletter</h3>
+        <p>Sign up to get the latest info on sales, new releases, and much more...</p>
+        <form action="https://httpbin.org/post" method="post" onsubmit="return validateNewsletterForm()">
+          <input type="email" name="email" placeholder="Your email" required="">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><img src="/facebook.45b89f04.png" alt="Facebook"></a>
+          <a href="#"><img src="/instagram.c4c6fe75.png" alt="Instagram"></a>
+          <a href="#"><img src="/x.eeeec43a.avif" alt="X"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="/index.b040860f.js"></script>
+    <script src="/index.72f6a3a7.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="/index.8f0c9192.js"></script>
+  <script src="/assignment-5.59712999.js"></script></body>
+</html>

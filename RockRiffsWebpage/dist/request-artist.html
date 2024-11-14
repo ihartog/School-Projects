@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ian Hartog">
+    <title>Request a New Artist - WEB222 Music App</title>
+    <link rel="stylesheet" href="/index.bfa1d38c.css">
+    <link rel="stylesheet" href="/index.77a9bc14.css">
+  </head>
+  <body>
+    <header>
+      <h1>Request a New Artist</h1>
+    </header>
+
+    <main>
+      <form action="https://httpbin.org/post" method="post">
+        <label for="artist-name">Artist's Name:</label>
+        <input type="text" id="artist-name" name="artist-name" required="">
+
+        <label for="genre">Music Genre:</label>
+        <input list="genres" id="genre" name="genre" required="">
+        <datalist id="genres">
+          <option value="Rock"></option>
+          <option value="Pop"></option>
+          <option value="Hip-Hop"></option>
+          <option value="Jazz"></option>
+          <option value="Classical"></option>
+          <option value="Country"></option>
+          <option value="Electronic"></option>
+          <option value="Blues"></option>
+          <option value="Reggae"></option>
+          <option value="Metal"></option>
+        </datalist>
+
+        <label for="social-urls">Social Media URLs:</label>
+        <input type="url" id="social-urls" name="social-urls" required="">
+
+        <label for="song-urls">Example Song/Video URLs:</label>
+        <div id="song-urls-container">
+          <input type="url" id="song-urls" name="song-urls[]">
+        </div>
+        <button type="button" id="add-song-url-btn">Add Another Song/Video</button>
+
+        <label for="explicit-lyrics">
+          <input type="checkbox" id="explicit-lyrics" name="explicit-lyrics">
+          Contains Explicit Lyrics
+        </label>
+
+        <label for="description">Why should we add this artist?</label>
+        <textarea id="description" name="description" required=""></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </main>
+
+    <!-- JavaScript for dynamically adding input fields -->
+    <script>document.getElementById("add-song-url-btn").addEventListener("click", function() {
+    const container = document.getElementById("song-urls-container");
+    const input = document.createElement("input");
+    input.type = "url";
+    input.name = "song-urls[]";
+    container.appendChild(input);
+});
+
+</script>
+  <script src="/request-artist.2ff19084.js"></script></body>
+</html>

@@ -1,0 +1,180 @@
+#main-title {
+  color: #9fd3c7;
+  text-align: center;
+  margin: 0;
+  font-size: 5em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#slogan {
+  color: #38598b;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  font-family: Lucida Handwriting, Courier New, monospace;
+  font-size: 1.2em;
+}
+
+#menu {
+  text-align: center;
+  font-size: 2em;
+}
+
+#menu button {
+  text-align: center;
+  color: #9fd3c7;
+  cursor: pointer;
+  background-color: #36486b;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+
+.cards-container {
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+}
+
+.artist-card {
+  color: #fff;
+  text-align: center;
+  background: #36486b;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: auto;
+  margin-bottom: .5em;
+  padding: 15px 5px;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: normal;
+  transition: all .3s;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.artist-image {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.song-title {
+  color: #53a8b6;
+  margin: 0;
+  font-size: .9em;
+}
+
+.song-year, .song-duration {
+  color: #bbe4e9;
+  margin-top: 5px;
+  font-size: .5em;
+}
+
+.artist-card:hover {
+  box-shadow: 0 8px 16px #0cc4ca33;
+}
+
+.artist-container {
+  padding: 2px 16px;
+}
+
+#selected-artist {
+  color: #5585b5;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+footer .newsletter-signup {
+  text-align: center;
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  padding: 20px;
+}
+
+footer .newsletter-signup h3 {
+  color: #36486b;
+  font-size: 1.5em;
+}
+
+footer .newsletter-signup p {
+  color: #70777f;
+  margin-bottom: 20px;
+}
+
+footer .newsletter-signup form input[type="email"] {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+footer .newsletter-signup form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #36486b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+footer .newsletter-signup form button:hover {
+  background-color: #9fd3c7;
+}
+
+footer .social-icons {
+  margin-top: 20px;
+}
+
+footer .social-icons a img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+form {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form button[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #36486b;
+}
+
+form button[type="submit"]:hover {
+  background-color: #9fd3c7;
+}
+
+form button[type="button"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #36486b;
+  align-self: flex-start;
+  padding: 5px 10px;
+}
+
+form button[type="button"]:hover {
+  background-color: #9fd3c7;
+}
+/*# sourceMappingURL=index.77a9bc14.css.map */
